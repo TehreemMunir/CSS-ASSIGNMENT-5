@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ASSIGNMENT 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* font-family */
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .table-container {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* box-shadow */
+            border-radius: 10px; /* border-radius */
+            overflow: hidden;
+            width: 90%;
+            max-width: 1100px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* border-collapse */
+            border-spacing: 0; /* border-spacing */
+            background-color: #ffffff; /* background-color */
+            border: 1px solid #d1e2e2; /* border */
+        }
+
+        th.main-title {
+            background-color: #3b8686;
+            color: #ffffff; /* color */
+            font-size: 28px; /* font-size */
+            text-align: center; /* text-align */
+            padding: 15px; /* padding */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .column-headers {
+            background-color: #e0f2f1;
+            color: #558b8f;
+        }
+
+        th {
+            padding: 12px 20px;
+            text-align: left;
+            font-weight: normal;
+            border-bottom: 1px solid #d1e2e2;
+        }
+
+        td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            vertical-align: middle;
+            color: #2c7a7b;
+            font-size: 15px;
+        }
+
+        tr:hover {
+            background-color: #f1fafa; /* hover effect */
+        }
+
+        .profile-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .comment-text {
+            color: #444;
+            line-height: 1.4;
+            max-width: 350px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5" class="main-title">Users</th>
+                </tr>
+                <tr class="column-headers">
+                    <th>Picture</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://i.pravatar.cc/150?u=1" class="profile-img" alt="User"></td>
+                    <td>Jane Doe</td>
+                    <td>jane.doe@foo.com</td>
+                    <td>01 800 2000</td>
+                    <td class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.pravatar.cc/150?u=2" class="profile-img" alt="User"></td>
+                    <td>John Doe</td>
+                    <td>john.doe@foo.com</td>
+                    <td>01 800 2000</td>
+                    <td class="comment-text">Blanditiis, aliquid numquam iure voluptatibus ut maiores explicabo ducimus neque, nesciunt rerum perferendis, inventore.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.pravatar.cc/150?u=3" class="profile-img" alt="User"></td>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@foo.com</td>
+                    <td>01 800 2000</td>
+                    <td class="comment-text">Culpa praesentium unde pariatur fugit eos recusandae voluptas.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.pravatar.cc/150?u=4" class="profile-img" alt="User"></td>
+                    <td>John Smith</td>
+                    <td>john.smith@foo.com</td>
+                    <td>01 800 2000</td>
+                    <td class="comment-text">Aut voluptatum accusantium, eveniet, sapiente quaerat adipisci consequatur maxime temporibus quas, dolorem impedit.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
